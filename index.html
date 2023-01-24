@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTO-Finder</title>
+
+                                                                <!----TAILWIND STARTS HERE-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+    <main>
+      <div class="h-64 bg-blue-300">
+
+        <ul class="uppercase font-bold flex space-x-4 justify-end p-5 ">
+            <li class="hover:bg-sky-100 rounded-lg" onclick="alert(' !! CREATED BY DHANUSH WITH LOVEE !!')">ABOUT</li>
+            <li class="hover:bg-sky-100 rounded-lg">
+                <a href="#">GITHUB</a>
+            </li>
+        </ul>
+        <div class="flex  flex-col justify-center items-center space-y-4 " >
+            <h1 class="font-bold  hover:bg-sky-100 text-xl "> RTO - FINDER</h1>
+
+            <div class="relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="38" viewBox="0 0 24 24" class="absolute top-0 left-0 right-0"><path fill="currentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"/></svg>
+            <input type="text" placeholder="ENTER VEHICLE NUM" class=" text-sm px-10 py-2 rounded uppercase placeholder:normal-case tracking-widest">
+            </div>
+        </div>
+        
+
+
+      </div>
+                                     <!--------------------------RESULT-------------------------------->
+
+      <div  class="bg-white m-9 shadow p-8 rounded hidden" id="result">
+        <span class="text-sm">Your Query:</span> <span class="font-semibold" tracking-widest id="query"></span>
+
+        
+        <table class="my-5 text-sm w-full">
+            <tbody>
+                <tr>
+                    <td class="border p-2 rounded  font-bold">ID</td>
+                    <td class="border p-2 rounded" id="rto_id">1</td>
+                </tr>
+                <tr>
+                    <td class="border p-2 rounded font-bold">CODE</td>
+                    <td class="border p-2 rounded" id="rto_code">TN 43</td>
+                </tr>
+                <tr>
+                    <td class="border p-2 rounded font-bold">LOCATION</td>
+                    <td class="border p-2 rounded" id="rto_loc">Coimbatore South</td>
+                </tr>
+                <tr>
+                    <td class="border p-2 rounded font-bold">TYPE</td>
+                    <td class="border p-2 rounded" id="rto_type">RTO</td>
+                </tr>
+                <tr>
+                    <td class="border p-2 rounded font-bold">DISTRICT</td>
+                    <td class="border p-2 rounded" id="rto_dis">Coimbatore</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+      </div>
+                                     <!--------------------------RESULT END-------------------------------->
+
+
+    
+        
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
